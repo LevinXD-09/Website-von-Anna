@@ -1,5 +1,6 @@
 /* ---------- Grundwerte ---------- */
 :root {
+  color-scheme: only light;
   --green-deep: #0B3D2E;
   --green-mid:  #0F5A43;
   --gold:       #CDB68A;
