@@ -353,21 +353,10 @@ blockquote { padding-left: 24px; border-left: 2px solid var(--gold-line); font: 
   .personal { grid-template-columns: 1fr; gap: 40px; }
 }
 
-
 /* ==========================================================
-   TEIL 4: Erweiterung der Hauptseite = "Themen"
+   TEIL 4: Themen-Seite (themen.html)
+   Der Einstieg nutzt das normale .hero aus Teil 1.
    ========================================================== */
-
-/* Einstieg der Themen-Seite */
-.themen-hero {
-  padding: 72px var(--pad) 80px;
-  background-color: var(--green-deep);
-  background-image: radial-gradient(circle at 0% 25%, rgba(120,190,150,.18), transparent 38%), radial-gradient(circle at 100% 100%, rgba(120,190,150,.15), transparent 30%);
-  color: #fff;
-}
-.themen-hero h1 { margin: 20px 0 24px; max-width: 14em; font: 400 clamp(2.4rem, 4.6vw, 3.75rem)/1.08 var(--serif); color: var(--beige); }
-.themen-hero .lead { margin-bottom: 0; }
-
 /* Themen-Bereich */
 .themen { padding: 80px var(--pad); background: var(--beige-dark); }
 
