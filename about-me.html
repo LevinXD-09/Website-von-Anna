@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <title>Über mich | Praxisname</title>
+  <meta name="description" content="Wer ich bin, wie ich arbeite und wofür ich stehe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Links zeigen auf die Hauptseite; bei Bedarf die Adresse anpassen -->
+<header class="site-header">
+  <a class="logo" href="https://levinxd-09.github.io/Website-von-Anna/" aria-label="Praxisname, zur Startseite">
+    <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><use href="#lotus"/></svg>
+    <span>Praxisname</span>
+  </a>
+  <nav class="main-nav" aria-label="Hauptmenü">
+    <a href="https://levinxd-09.github.io/Website-von-Anna/">Home</a>
+    <a href="#top" aria-current="page">Über mich</a>
+    <a href="https://levinxd-09.github.io/Website-von-Anna/#themen">Themen</a>
+    <a href="https://levinxd-09.github.io/Website-von-Anna/#angebote">Angebote</a>
+    <a href="https://levinxd-09.github.io/Website-von-Anna/#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn btn-dark" href="https://levinxd-09.github.io/Website-von-Anna/#kontakt">Termin anfragen →</a>
+</header>
+
+<main id="top">
+
+  <!-- Einstieg -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Über mich</p>
+      <h1>Hallo, ich bin Anna Knodel.</h1>
+      <p class="lead">Ich begleite Menschen auf ihrem Weg zu mehr Gesundheit und Wohlbefinden: mit Zeit zum Zuhören, fundiertem Wissen und Wegen, die in den Alltag passen.</p>
+      <a class="btn btn-gold" href="#weg">Mein Werdegang ↓</a>
+    </div>
+    <!-- Porträt: im CSS bei .arch-inner ein background-image eintragen -->
+    <div class="arch" role="img" aria-label="Porträt von [Vorname Nachname]">
+      <div class="arch-inner"></div>
+    </div>
+  </section>
+
+  <!-- Meine Geschichte -->
+  <section class="story">
+    <div class="section-head">
+      <p class="eyebrow dark">Meine Geschichte</p>
+      <h2>Warum mir Gesundheit am Herzen liegt</h2>
+    </div>
+    <div class="story-text">
+      <p>Hier steht der persönliche Einstieg: Was hat dich zu diesem Beruf geführt? Ein Erlebnis, eine Begegnung oder eine Überzeugung, die dich bis heute prägt.</p>
+      <p>Im zweiten Absatz erzählst du, wie du arbeitest und was Menschen bei dir erwarten dürfen, in einfachen, warmen Worten.</p>
+    </div>
+  </section>
+
+  <!-- Werdegang -->
+  <section class="path" id="weg">
+    <div class="section-head">
+      <p class="eyebrow dark">Werdegang</p>
+      <h2>Mein Weg bis heute</h2>
+    </div>
+    <ol class="timeline">
+      <li><span class="year">[Jahr]</span><div><h3>[Ausbildung oder Studium]</h3><p>Kurze Beschreibung, was du gelernt hast und wo.</p></div></li>
+      <li><span class="year">[Jahr]</span><div><h3>[Erste Berufserfahrung]</h3><p>Kurze Beschreibung deiner Aufgaben und Erkenntnisse.</p></div></li>
+      <li><span class="year">[Jahr]</span><div><h3>[Weiterbildung]</h3><p>Kurze Beschreibung, welche Schwerpunkte du vertieft hast.</p></div></li>
+      <li><span class="year">[Jahr]</span><div><h3>[Eigene Praxis / heute]</h3><p>Kurze Beschreibung, was du heute anbietest.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- Haltung -->
+  <section class="values-dark">
+    <div class="section-head">
+      <p class="eyebrow">Meine Haltung</p>
+      <h2>Wofür ich stehe</h2>
+    </div>
+    <div class="value-cols">
+      <div><h3>Zuhören</h3><p>Ich nehme mir Zeit, bevor ich Empfehlungen gebe. Jeder Mensch bringt seine eigene Geschichte mit.</p></div>
+      <div><h3>Ganzheitlich denken</h3><p>Körper, Geist und Alltag gehören zusammen. Deshalb schaue ich auf das große Ganze.</p></div>
+      <div><h3>Verständlich erklären</h3><p>Gesundheitswissen soll sich leicht anwenden lassen, ohne Fachsprache und ohne Druck.</p></div>
+    </div>
+  </section>
+
+  <!-- Qualifikationen -->
+  <section class="quals">
+    <div class="section-head">
+      <p class="eyebrow dark">Qualifikationen</p>
+      <h2>Ausbildung und Zertifikate</h2>
+    </div>
+    <div class="qual-cols">
+      <ul>
+        <li>[Abschluss, Institution, Jahr]</li>
+        <li>[Zertifikat, Institution, Jahr]</li>
+        <li>[Weiterbildung, Institution, Jahr]</li>
+      </ul>
+      <ul>
+        <li>[Mitgliedschaft in Verband]</li>
+        <li>[Schwerpunkt oder Spezialgebiet]</li>
+        <li>[Sprachen]</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Persönliches -->
+  <section class="personal">
+    <div class="collage" aria-hidden="true">
+      <!-- Bilder: im CSS bei .collage-a und .collage-b background-image eintragen -->
+      <div class="collage-a"></div>
+      <div class="collage-b"></div>
+      <div class="badge"><svg viewBox="0 0 40 40" width="44" height="44"><use href="#lotus"/></svg></div>
+    </div>
+    <div class="personal-text">
+      <p class="eyebrow dark">Abseits der Praxis</p>
+      <h2>Was mir selbst guttut</h2>
+      <p>Hier erzählst du in zwei, drei Sätzen etwas Persönliches: Spaziergänge, Kochen, Gärtnern oder Lesen. Das macht dich nahbar.</p>
+      <blockquote>„Ein Lieblingszitat oder Leitsatz, der zu dir passt."</blockquote>
+    </div>
+  </section>
+
+  <!-- Abschluss -->
+  <section class="cta">
+    <svg class="leaf-art" viewBox="0 0 200 320" aria-hidden="true">
+      <path d="M100 310C100 200 110 100 150 10 130 90 60 160 100 310z"/>
+      <path d="M100 220c30-20 50-50 60-90"/>
+      <path d="M100 250C70 230 40 210 20 170c30 0 60 30 80 80z"/>
+    </svg>
+    <h2>Lernen wir uns kennen</h2>
+    <p>Im unverbindlichen Kennenlerngespräch klären wir, wie ich Sie unterstützen kann.</p>
+    <a class="btn btn-dark" href="https://levinxd-09.github.io/Website-von-Anna/#kontakt">Gespräch vereinbaren →</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">Praxisname</div>
+  <nav aria-label="Rechtliches">
+    <a href="#">Impressum</a>
+    <a href="#">Datenschutz</a>
+    <a href="https://levinxd-09.github.io/Website-von-Anna/#kontakt">Kontakt</a>
+  </nav>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="lotus" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M20 8c-4 4-4 12 0 18 4-6 4-14 0-18z"/>
+    <path d="M20 26c-2-6-8-9-13-9 1 7 6 12 13 12z"/>
+    <path d="M20 26c2-6 8-9 13-9-1 7-6 12-13 12z"/>
+  </symbol>
+</svg>
+
+</body>
+</html>
