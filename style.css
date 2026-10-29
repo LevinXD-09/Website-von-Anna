@@ -352,3 +352,70 @@ blockquote { padding-left: 24px; border-left: 2px solid var(--gold-line); font: 
   .value-cols > div:first-child { border-top: 0; padding-top: 0; }
   .personal { grid-template-columns: 1fr; gap: 40px; }
 }
+
+
+/* ==========================================================
+   TEIL 4: Erweiterung der Hauptseite = "Themen"
+   ========================================================== */
+
+/* Einstieg der Themen-Seite */
+.themen-hero {
+  padding: 72px var(--pad) 80px;
+  background-color: var(--green-deep);
+  background-image: radial-gradient(circle at 0% 25%, rgba(120,190,150,.18), transparent 38%), radial-gradient(circle at 100% 100%, rgba(120,190,150,.15), transparent 30%);
+  color: #fff;
+}
+.themen-hero h1 { margin: 20px 0 24px; max-width: 14em; font: 400 clamp(2.4rem, 4.6vw, 3.75rem)/1.08 var(--serif); color: var(--beige); }
+.themen-hero .lead { margin-bottom: 0; }
+
+/* Themen-Bereich */
+.themen { padding: 80px var(--pad); background: var(--beige-dark); }
+
+.themen-head { max-width: 40rem; margin-bottom: 48px; }
+.themen-head h2 {
+  margin: 14px 0 16px;
+  font: 400 clamp(2.2rem, 4vw, 3.1rem)/1.1 var(--serif);
+  color: var(--green-deep);
+}
+.themen-head p:not(.eyebrow) { color: var(--ink-soft); }
+
+.themen-grid {
+  display: grid; gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.themen-karte {
+  display: flex; flex-direction: column;
+  background: var(--beige);
+  border: 1px solid var(--gold-line);
+  border-radius: 6px 6px 6px 6px;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+}
+.themen-karte:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(11, 61, 46, .12); }
+
+/* Bildfläche mit Bogen oben, passend zum Hero */
+.themen-bild {
+  height: 210px;
+  margin: 16px 16px 0;
+  border-radius: 170px 170px 0 0;
+  background: linear-gradient(170deg, #EFE6D3, #D8C7A4) center / cover no-repeat;
+}
+.themen-karte:nth-child(3n+2) .themen-bild { background-image: linear-gradient(170deg, #DCEBE3, #B9D3C5); }
+.themen-karte:nth-child(3n+3) .themen-bild { background-image: linear-gradient(170deg, var(--green-mid), #082B20); }
+
+.themen-inhalt { display: flex; flex-direction: column; flex: 1; padding: 24px 28px 30px; }
+.themen-nr { font: 500 1.1rem/1 var(--serif); letter-spacing: .1em; color: var(--gold-text); }
+.themen-inhalt h3 { margin: 10px 0 10px; font: 500 1.8rem/1.2 var(--serif); color: var(--green-deep); }
+.themen-inhalt p { margin: 0 0 20px; color: var(--ink-soft); }
+.themen-inhalt a {
+  margin-top: auto; align-self: flex-start;
+  font-weight: 400; color: var(--green-deep);
+  border-bottom: 1px solid var(--gold-line);
+}
+.themen-inhalt a:hover { color: var(--green-mid); }
+
+@media (prefers-reduced-motion: reduce) {
+  .themen-karte { transition: none; }
+  .themen-karte:hover { transform: none; }
+}
