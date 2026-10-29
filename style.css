@@ -1,3 +1,8 @@
+/* ==========================================================
+   TEIL 1: Hauptseite (Grundwerte, Kopfzeile, Hero, Werte,
+           Über uns, Footer, Mobil)
+   ========================================================== */
+
 /* ---------- Grundwerte ---------- */
 :root {
   color-scheme: only light;
@@ -176,4 +181,174 @@ h1, h2, p { margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn { transition: none; }
+}
+
+
+/* ==========================================================
+   TEIL 2: Erweiterung der Hauptseite (Themen, Angebote, Kontakt)
+   ========================================================== */
+h3, blockquote { margin: 0; }
+
+
+.section-head { max-width: 40rem; margin-bottom: 48px; }
+.section-head h2 {
+  margin: 14px 0 16px;
+  font: 400 clamp(2.2rem, 4vw, 3.1rem)/1.1 var(--serif);
+  color: var(--green-deep);
+}
+.section-head p:not(.eyebrow) { color: var(--ink-soft); }
+
+/* ---------- Themen ---------- */
+.topics { padding: 80px var(--pad); background: var(--beige-dark); }
+.topic-grid {
+  display: grid; gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.topic {
+  padding: 36px 32px;
+  background: var(--beige);
+  border: 1px solid var(--gold-line);
+  border-radius: 6px;
+}
+.topic svg {
+  width: 48px; height: 48px; margin-bottom: 20px;
+  fill: none; stroke: var(--gold-line); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.topic h3 { margin: 0 0 10px; font: 500 1.7rem/1.2 var(--serif); color: var(--green-deep); }
+.topic p { margin: 0 0 20px; color: var(--ink-soft); }
+.topic a { font-weight: 400; color: var(--green-deep); border-bottom: 1px solid var(--gold-line); }
+.topic a:hover { color: var(--green-mid); }
+
+/* ---------- Angebote ---------- */
+.offers {
+  padding: 80px var(--pad);
+  background-color: var(--green-deep);
+  background-image: radial-gradient(circle at 100% 0%, rgba(120,190,150,.15), transparent 35%);
+  color: #fff;
+}
+.offers .section-head h2 { color: var(--beige); }
+.offer-list { list-style: none; margin: 0 0 44px; padding: 0; max-width: 62rem; }
+.offer-list li {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px;
+  padding: 28px 0;
+  border-top: 1px solid rgba(205, 182, 138, .45);
+}
+.offer-list li:last-child { border-bottom: 1px solid rgba(205, 182, 138, .45); }
+.offer-list h3 { margin: 0 0 6px; font: 500 1.75rem/1.2 var(--serif); color: var(--beige); }
+.offer-list p { margin: 0; max-width: 34rem; color: #DCE9E1; }
+.offer-meta { color: var(--gold); font-weight: 400; white-space: nowrap; }
+
+/* ---------- Kontakt ---------- */
+.contact {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start;
+  padding: 80px var(--pad);
+  background: var(--beige);
+}
+.contact-info h2 {
+  margin: 14px 0 16px;
+  font: 400 clamp(2.2rem, 4vw, 3.1rem)/1.1 var(--serif);
+  color: var(--green-deep);
+}
+.contact-info > p:not(.eyebrow) { margin-bottom: 32px; color: var(--ink-soft); }
+.contact-info dl { display: grid; grid-template-columns: 6rem 1fr; gap: 14px 16px; margin: 0; }
+.contact-info dt { font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold-text); padding-top: .3em; }
+.contact-info dd { margin: 0; color: var(--ink); }
+.contact-info a:hover { color: var(--green-mid); }
+
+.contact-form {
+  display: grid; gap: 8px;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid var(--gold-line);
+  border-radius: 6px;
+}
+.contact-form label:not(.check) { margin-top: 10px; font-weight: 400; color: var(--green-deep); }
+.contact-form input:not([type="checkbox"]),
+.contact-form select,
+.contact-form textarea {
+  width: 100%; padding: 13px 16px;
+  font: inherit; color: var(--ink);
+  background: var(--beige);
+  border: 1px solid var(--gold-line);
+  border-radius: 10px;
+}
+.contact-form textarea { resize: vertical; min-height: 130px; }
+.contact-form .check { display: flex; gap: 12px; align-items: flex-start; margin: 18px 0 8px; font-size: .95rem; color: var(--ink-soft); }
+.contact-form .check input { flex: none; width: 20px; height: 20px; margin-top: 3px; accent-color: var(--green-deep); }
+.contact-form .check a { text-decoration: underline; }
+.contact-form .btn { justify-self: start; border: 0; cursor: pointer; font-family: inherit; font-size: 1rem; }
+
+@media (max-width: 900px) {
+  .contact { grid-template-columns: 1fr; gap: 40px; }
+  .contact-form { padding: 28px 22px; }
+}
+
+
+/* ==========================================================
+   TEIL 3: Seite "Über mich" (ueber-mich.html)
+   Nur aktiv mit <body class="page-about">, damit nichts
+   von der Hauptseite überschrieben wird.
+   ========================================================== */
+.page-about .section-head { max-width: 40rem; margin-bottom: 44px; }
+.page-about .section-head h2 { margin: 14px 0 0; font: 400 clamp(2.2rem, 4vw, 3.1rem)/1.1 var(--serif); color: var(--green-deep); }
+
+/* Einstieg: etwas kleinere Überschrift, größerer Bogen */
+.page-about .hero h1 { font-size: clamp(2.4rem, 4.6vw, 3.75rem); line-height: 1.08; }
+.page-about .arch { max-width: 480px; height: 420px; border-radius: 240px 240px 0 0; }
+.page-about .arch-inner { width: 78%; height: 86%; border-radius: 190px 190px 0 0; }
+
+/* Geschichte */
+.story { padding: 80px var(--pad) 40px; }
+.story-text { max-width: 44rem; columns: 2; column-gap: 48px; color: var(--ink-soft); }
+.story-text p { margin: 0 0 1em; break-inside: avoid; }
+
+/* Werdegang */
+.path { padding: 40px var(--pad) 80px; }
+.timeline { list-style: none; margin: 0; padding: 0 0 0 24px; max-width: 46rem; border-left: 1px solid var(--gold-line); }
+.timeline li { position: relative; display: grid; grid-template-columns: 6rem 1fr; gap: 20px; padding: 0 0 36px 28px; }
+.timeline li::before { content: ""; position: absolute; left: -32px; top: .55em; width: 15px; height: 15px; border-radius: 50%; background: var(--beige); border: 2px solid var(--gold-line); }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li:last-child::before { background: var(--gold-line); }
+.year { font: 500 1.5rem/1.3 var(--serif); color: var(--gold-text); }
+.timeline h3 { margin: 0 0 4px; font: 500 1.6rem/1.2 var(--serif); color: var(--green-deep); }
+.timeline p { margin: 0; color: var(--ink-soft); }
+
+/* Haltung */
+.values-dark { padding: 80px var(--pad); background-color: var(--green-deep); background-image: radial-gradient(circle at 100% 0%, rgba(120,190,150,.15), transparent 35%); color: #fff; }
+.page-about .values-dark .section-head h2 { color: var(--beige); }
+.value-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.value-cols > div { padding: 8px 36px; border-left: 1px solid rgba(205,182,138,.45); }
+.value-cols > div:first-child { padding-left: 0; border-left: 0; }
+.value-cols h3 { margin: 0 0 10px; font: 500 1.8rem/1.2 var(--serif); color: var(--beige); }
+.value-cols p { margin: 0; color: #DCE9E1; }
+
+/* Qualifikationen */
+.quals { padding: 80px var(--pad); background: var(--beige-dark); }
+.qual-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 48px; max-width: 60rem; }
+.qual-cols ul { list-style: none; margin: 0; padding: 0; }
+.qual-cols li { padding: 16px 0; border-bottom: 1px solid var(--gold-line); color: var(--ink); }
+.qual-cols li:first-child { border-top: 1px solid var(--gold-line); }
+
+/* Persönliches */
+.personal { display: grid; grid-template-columns: minmax(300px, 520px) minmax(320px, 520px); gap: 64px; align-items: center; justify-content: center; padding: 88px var(--pad); }
+.page-about .collage { height: 420px; }
+.personal-text h2 { margin: 14px 0 20px; font: 400 clamp(2.2rem, 4vw, 3.1rem)/1.1 var(--serif); color: var(--green-deep); }
+.personal-text p:not(.eyebrow) { margin: 0 0 28px; color: var(--ink-soft); }
+blockquote { padding-left: 24px; border-left: 2px solid var(--gold-line); font: italic 400 1.6rem/1.35 var(--serif); color: var(--green-deep); }
+
+/* Abschluss */
+.cta { position: relative; overflow: hidden; text-align: center; padding: 88px var(--pad); background: var(--beige-dark); }
+.cta h2 { margin: 0 0 14px; font: 400 clamp(2.2rem, 4vw, 3.1rem)/1.1 var(--serif); color: var(--green-deep); }
+.cta p { max-width: 32rem; margin: 0 auto 28px; color: var(--ink-soft); }
+.cta > :not(.leaf-art) { position: relative; z-index: 1; }
+.cta .leaf-art { right: 4%; top: 20px; width: 180px; height: 290px; }
+
+@media (max-width: 900px) {
+  .page-about .arch { height: 340px; }
+  .story-text { columns: 1; }
+  .timeline li { grid-template-columns: 1fr; gap: 2px; }
+  .value-cols > div { padding: 20px 0; border-left: 0; border-top: 1px solid rgba(205,182,138,.45); }
+  .value-cols > div:first-child { border-top: 0; padding-top: 0; }
+  .personal { grid-template-columns: 1fr; gap: 40px; }
 }
