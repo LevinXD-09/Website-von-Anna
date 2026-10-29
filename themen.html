@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <title>Themen | Praxisname</title>
+  <meta name="description" content="Die Schwerpunkte im Überblick: Ernährung, Bewegung, Erholung und mehr.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Praxisname, zur Startseite">
+    <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><use href="#lotus"/></svg>
+    <span>Praxisname</span>
+  </a>
+  <nav class="main-nav" aria-label="Hauptmenü">
+    <a href="index.html">Home</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <a href="themen.html" aria-current="page">Themen</a>
+    <a href="index.html#angebote">Angebote</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn btn-dark" href="index.html#kontakt">Termin anfragen →</a>
+</header>
+
+<main id="top">
+
+  <!-- Einstieg -->
+  <section class="themen-hero">
+    <p class="eyebrow">Themen</p>
+    <h1>Gesundheit hat viele Seiten.</h1>
+    <p class="lead">Hier finden Sie die Schwerpunkte, bei denen ich Sie begleiten kann, jeweils mit Ruhe, Wissen und Zeit für Ihre Fragen.</p>
+  </section>
+
+  <!-- Themen-Bereich -->
+  <section class="themen" id="themen">
+  <div class="themen-head">
+    <p class="eyebrow dark">Themen</p>
+    <h2>Worum es bei uns geht</h2>
+    <p>Gesundheit hat viele Seiten. Hier finden Sie die Schwerpunkte, bei denen ich Sie unterstützen kann.</p>
+  </div>
+
+  <div class="themen-grid">
+
+    <!-- Eigenes Foto: style="background-image:url('bilder/ernaehrung.jpg')" im Div mit class="themen-bild" ergänzen -->
+    <article class="themen-karte">
+      <div class="themen-bild" role="img" aria-label="Frische Zutaten auf einem Holzbrett"></div>
+      <div class="themen-inhalt">
+        <span class="themen-nr">01</span>
+        <h3>Ernährung</h3>
+        <p>Ausgewogen essen, ohne Verbote. Mit einfachen Schritten mehr Energie im Alltag gewinnen.</p>
+        <a href="#kontakt">Mehr erfahren →</a>
+      </div>
+    </article>
+
+    <article class="themen-karte">
+      <div class="themen-bild" role="img" aria-label="Spaziergang in der Natur"></div>
+      <div class="themen-inhalt">
+        <span class="themen-nr">02</span>
+        <h3>Bewegung</h3>
+        <p>Sanfte Übungen für Rücken, Gelenke und Kreislauf, passend zu Ihrem Tempo.</p>
+        <a href="#kontakt">Mehr erfahren →</a>
+      </div>
+    </article>
+
+    <article class="themen-karte">
+      <div class="themen-bild" role="img" aria-label="Ruhiger Raum mit Kerze und Decke"></div>
+      <div class="themen-inhalt">
+        <span class="themen-nr">03</span>
+        <h3>Erholung und Schlaf</h3>
+        <p>Wege zu mehr Ruhe, besserem Schlaf und einem entspannteren Umgang mit Stress.</p>
+        <a href="#kontakt">Mehr erfahren →</a>
+      </div>
+    </article>
+
+    <article class="themen-karte">
+      <div class="themen-bild" role="img" aria-label="Frische Kräuter"></div>
+      <div class="themen-inhalt">
+        <span class="themen-nr">04</span>
+        <h3>Natürliche Helfer</h3>
+        <p>Kräuter, Tees und bewährte Hausmittel: sanfte Unterstützung für den Alltag.</p>
+        <a href="#kontakt">Mehr erfahren →</a>
+      </div>
+    </article>
+
+    <article class="themen-karte">
+      <div class="themen-bild" role="img" aria-label="Person beim Atmen am Fenster"></div>
+      <div class="themen-inhalt">
+        <span class="themen-nr">05</span>
+        <h3>Gelassenheit</h3>
+        <p>Kleine Rituale und Atemübungen, die helfen, im Alltag bei sich zu bleiben.</p>
+        <a href="#kontakt">Mehr erfahren →</a>
+      </div>
+    </article>
+
+    <article class="themen-karte">
+      <div class="themen-bild" role="img" aria-label="Gespräch in der Praxis"></div>
+      <div class="themen-inhalt">
+        <span class="themen-nr">06</span>
+        <h3>Vorsorge</h3>
+        <p>Rechtzeitig hinschauen und gut informiert entscheiden: für langfristiges Wohlbefinden.</p>
+        <a href="#kontakt">Mehr erfahren →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  <!-- Abschluss -->
+  <section class="cta">
+    <svg class="leaf-art" viewBox="0 0 200 320" aria-hidden="true">
+      <path d="M100 310C100 200 110 100 150 10 130 90 60 160 100 310z"/>
+      <path d="M100 220c30-20 50-50 60-90"/>
+      <path d="M100 250C70 230 40 210 20 170c30 0 60 30 80 80z"/>
+    </svg>
+    <h2>Ihr Thema ist nicht dabei?</h2>
+    <p>Schreiben Sie mir einfach. Gemeinsam finden wir heraus, wie ich Sie unterstützen kann.</p>
+    <a class="btn btn-dark" href="index.html#kontakt">Kontakt aufnehmen →</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">Praxisname</div>
+  <nav aria-label="Rechtliches">
+    <a href="#">Impressum</a>
+    <a href="#">Datenschutz</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="lotus" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M20 8c-4 4-4 12 0 18 4-6 4-14 0-18z"/>
+    <path d="M20 26c-2-6-8-9-13-9 1 7 6 12 13 12z"/>
+    <path d="M20 26c2-6 8-9 13-9-1 7-6 12-13 12z"/>
+  </symbol>
+</svg>
+
+</body>
+</html>
